@@ -1,2 +1,0 @@
-# docs
-Waranti Api Docs
