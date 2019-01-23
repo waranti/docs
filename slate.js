@@ -59,10 +59,10 @@ const getFile = filePath => {
   return $.get(filePath);
 };
 
-// Reads in source/waranti.md and uses that to populate the 
+// Reads in source/slate.md and uses that to populate the 
 // <body> element of source/index.html with generated documentation
 const createDocs = async () => {
-  let  markdown = (await getFile('waranti.md')).split(/---/g);
+  let  markdown = (await getFile('slate.md')).split(/---/g);
   const data = {content: marked(markdown.slice(2).join('')), ...parserHeader(markdown)};
   data.content += await data.includes.reduce(async (includes, include) => 
     includes + '\n' +  marked(await getFile('includes/_' + include + '.md')), '');
@@ -80,7 +80,7 @@ if (isNode) {
   var $ = require('cheerio').load(getFile('index.html'));
   configure();
   createDocs();
-  $('#warantijs').remove();
+  $('#slatejs').remove();
   fse.copy(__dirname, __dirname + '/../build')
   .then(() => fs.writeFileSync(__dirname + '/../build/index.html', $.html()));
 } else {
