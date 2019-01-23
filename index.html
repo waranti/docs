@@ -19,9 +19,6 @@
     <script>
       $(function() {
         var langs = []
-          langs.push("shell") 
-          langs.push("Ruby") 
-          langs.push("python") 
         setupLanguages(langs)
       })
     </script>
@@ -31,9 +28,6 @@
   <div class="tocify-wrapper">
     <img src="images/logo.png">
     <div class="lang-selector">
-        <a href="#" data-language-name="shell"> cURL</a>
-        <a href="#" data-language-name="Ruby">Ruby</a>
-        <a href="#" data-language-name="python"> Python</a>
     </div>
     <div class="search">
       <input type="text" class="search" id="input-search" placeholder="Search">
@@ -55,15 +49,8 @@
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre><code class="highlight ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;kittn&apos;</span>
-
-api = Kittn::APIClient.authorize!(<span class="hljs-string">&apos;meowmeowmeow&apos;</span>)</code></pre>
-<pre><code class="highlight python"><span class="hljs-keyword">import</span> kittn
-
-api = kittn.authorize(<span class="hljs-string">&apos;meowmeowmeow&apos;</span>)</code></pre>
-<pre><code class="highlight shell"><span class="hljs-comment"># With shell, you can just pass the correct header with each request</span>
-curl <span class="hljs-string">&quot;api_endpoint_here&quot;</span>
-  -H <span class="hljs-string">&quot;Authorization: meowmeowmeow&quot;</span></code></pre>
+<p>require &apos;kittn&apos;</p>
+<p>api = Kittn::APIClient.authorize!(&apos;meowmeowmeow&apos;)</p>
 <blockquote>
 <p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
 </blockquote>
@@ -76,16 +63,9 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 <h1 id="kittens">Kittens</h1>
 <h2 id="get-all-kittens">Get All Kittens</h2>
-<pre><code class="highlight ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;kittn&apos;</span>
-
-api = Kittn::APIClient.authorize!(<span class="hljs-string">&apos;meowmeowmeow&apos;</span>)
-api.kittens.get</code></pre>
-<pre><code class="highlight python"><span class="hljs-keyword">import</span> kittn
-
-api = kittn.authorize(<span class="hljs-string">&apos;meowmeowmeow&apos;</span>)
-api.kittens.get()</code></pre>
-<pre><code class="highlight shell">curl <span class="hljs-string">&quot;http://example.com/api/kittens&quot;</span>
-  -H <span class="hljs-string">&quot;Authorization: meowmeowmeow&quot;</span></code></pre>
+<p>require &apos;kittn&apos;</p>
+<p>api = Kittn::APIClient.authorize!(&apos;meowmeowmeow&apos;)
+api.kittens.get</p>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
@@ -133,16 +113,9 @@ Remember &#x2014; a happy kitten is an authenticated kitten!
 </aside>
 
 <h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre><code class="highlight ruby"><span class="hljs-keyword">require</span> <span class="hljs-string">&apos;kittn&apos;</span>
-
-api = Kittn::APIClient.authorize!(<span class="hljs-string">&apos;meowmeowmeow&apos;</span>)
-api.kittens.get(<span class="hljs-number">2</span>)</code></pre>
-<pre><code class="highlight python"><span class="hljs-keyword">import</span> kittn
-
-api = kittn.authorize(<span class="hljs-string">&apos;meowmeowmeow&apos;</span>)
-api.kittens.get(<span class="hljs-number">2</span>)</code></pre>
-<pre><code class="highlight shell">curl <span class="hljs-string">&quot;http://example.com/api/kittens/2&quot;</span>
-  -H <span class="hljs-string">&quot;Authorization: meowmeowmeow&quot;</span></code></pre>
+<p>require &apos;kittn&apos;</p>
+<p>api = Kittn::APIClient.authorize!(&apos;meowmeowmeow&apos;)
+api.kittens.get(2)</p>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
@@ -231,9 +204,6 @@ api.kittens.get(<span class="hljs-number">2</span>)</code></pre>
 </div>
     <div class="dark-box">
       <div class="lang-selector"> 
-          <a href="#" data-language-name="shell"> cURL</a>
-          <a href="#" data-language-name="Ruby">Ruby</a>
-          <a href="#" data-language-name="python"> Python</a>
       </div>
     </div>
   </div>

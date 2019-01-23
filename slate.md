@@ -1,11 +1,7 @@
 ---
 title: API Reference
-
-language_tabs:
-  - shell: cURL
-  - Ruby
-  - python: Python
   
+
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
@@ -31,23 +27,11 @@ This example API documentation page was created with [Slate](http://github.com/t
 
 > To authorize, use this code:
 
-```ruby
+
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
@@ -65,24 +49,11 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 ## Get All Kittens
 
-```ruby
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get
-```
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
 
 > The above command returns JSON structured like this:
 
@@ -124,24 +95,12 @@ Remember — a happy kitten is an authenticated kitten!
 
 ## Get a Specific Kitten
 
-```ruby
+
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
 api.kittens.get(2)
-```
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
 
 > The above command returns JSON structured like this:
 
