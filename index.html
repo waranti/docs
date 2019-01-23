@@ -36,15 +36,15 @@
     <div id="toc"></div>
     <ul class="toc-footer">
         <li><a href="#">Sign Up for a Developer Key</a></li> 
-        <li><a href="http://github.com/tripit/slate">Documentation Powered by Slate</a></li> 
+        <li><a href="http://github.com/waranti/slate">Documentation Powered by WarantiSlate</a></li> 
     </ul>
   </div>
   <div class="page-wrapper">
     <div class="dark-box"></div>
     <div class="content"><h1 id="introduction">Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the Waranti API! You can use our API to access Kittn API endpoints, which can get information on various cats, waranti, and breeds in our database.</p>
 <p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-<p>This example API documentation page was created with <a href="http://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&apos;s documentation.</p>
+<p>This example API documentation page was created with <a href="http://github.com/waranti/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&apos;s documentation.</p>
 <h1 id="authentication">Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
@@ -61,11 +61,11 @@
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-<h1 id="kittens">Kittens</h1>
-<h2 id="get-all-kittens">Get All Kittens</h2>
+<h1 id="waranti">Waranti</h1>
+<h2 id="get-all-waranti">Get All Waranti</h2>
 <p>require &apos;kittn&apos;</p>
 <p>api = Kittn::APIClient.authorize!(&apos;meowmeowmeow&apos;)
-api.kittens.get</p>
+api.waranti.get</p>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
@@ -85,9 +85,9 @@ api.kittens.get</p>
     <span class="hljs-attr">&quot;cuteness&quot;</span>: <span class="hljs-number">10</span>
   }
 ]</code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint retrieves all waranti.</p>
 <h3 id="http-request">HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
+<p><code>GET http://example.com/api/waranti</code></p>
 <h3 id="query-parameters">Query Parameters</h3>
 <table>
 <thead>
@@ -105,7 +105,7 @@ api.kittens.get</p>
 <tr>
 <td>available</td>
 <td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>If set to false, the result will include waranti that have already been adopted.</td>
 </tr>
 </tbody></table>
 <aside class="success">
@@ -115,7 +115,7 @@ Remember &#x2014; a happy kitten is an authenticated kitten!
 <h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
 <p>require &apos;kittn&apos;</p>
 <p>api = Kittn::APIClient.authorize!(&apos;meowmeowmeow&apos;)
-api.kittens.get(2)</p>
+api.waranti.get(2)</p>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
@@ -127,10 +127,10 @@ api.kittens.get(2)</p>
   <span class="hljs-attr">&quot;cuteness&quot;</span>: <span class="hljs-number">10</span>
 }</code></pre>
 <p>This endpoint retrieves a specific kitten.</p>
-<aside class="warning">If you&apos;re not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
+<aside class="warning">If you&apos;re not using an administrator API key, note that some waranti will return 403 Forbidden if they are hidden for admins only.</aside>
 
 <h3 id="http-request">HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code>GET http://example.com/waranti/&lt;ID&gt;</code></p>
 <h3 id="url-parameters">URL Parameters</h3>
 <table>
 <thead>

@@ -4,7 +4,7 @@ title: API Reference
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='http://github.com/waranti/slate'>Documentation Powered by WarantiSlate</a>
 
 includes:
   - errors
@@ -17,11 +17,11 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Waranti API! You can use our API to access Kittn API endpoints, which can get information on various cats, waranti, and breeds in our database.
 
 We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+This example API documentation page was created with [Slate](http://github.com/waranti/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
 # Authentication
 
@@ -45,14 +45,14 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Waranti
 
-## Get All Kittens
+## Get All Waranti
 
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+api.waranti.get
 
 
 > The above command returns JSON structured like this:
@@ -76,18 +76,18 @@ api.kittens.get
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all waranti.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://example.com/api/waranti`
 
 ### Query Parameters
 
 | Parameter | Default | Description |
 | ---- | ---- | ---- |
 | include_cats | false | If set to true, the result will also include cats. |
-| available | true | If set to false, the result will include kittens that have already been adopted. |
+| available | true | If set to false, the result will include waranti that have already been adopted. |
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
@@ -99,7 +99,7 @@ Remember — a happy kitten is an authenticated kitten!
 require 'kittn'
 
 api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+api.waranti.get(2)
 
 
 > The above command returns JSON structured like this:
@@ -116,11 +116,11 @@ api.kittens.get(2)
 
 This endpoint retrieves a specific kitten.
 
-<aside class="warning">If you're not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
+<aside class="warning">If you're not using an administrator API key, note that some waranti will return 403 Forbidden if they are hidden for admins only.</aside>
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET http://example.com/waranti/<ID>`
 
 ### URL Parameters
 
